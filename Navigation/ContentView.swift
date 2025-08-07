@@ -12,12 +12,15 @@ struct ContentView: View {
         NavigationStack {
             VStack{
                 Text("This is the Root View")
-                NavigationLink(destination: Text("You've arrived at the Second View!")) {
+                    .font(.title2)
+                    
+                NavigationLink(destination: SecondView()) {
                     Text ("Click Me")
                 }
                 
-                
+            
             }//end VStack
+            .navigationTitle("Home")
         }//end NanStack
         
         
@@ -27,3 +30,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
