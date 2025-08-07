@@ -21,6 +21,8 @@ struct ContentView: View {
             
             }//end VStack
             .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }//end NanStack
         
         
